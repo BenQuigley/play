@@ -1,23 +1,29 @@
-from flask import Flask, render_template, request, redirect
-import jinja2
 import os
+
+import jinja2
+
+from flask import Flask, redirect, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route("/")
 def hello():
-	return render_template("index.html")
+    return render_template("index.html")
 
-@app.route('/change')
+
+@app.route("/change")
 def chance():
-	return redirect('/')
+    return redirect("/")
 
-@app.route('/post', methods=['GET','POST'])
+
+@app.route("/post", methods=["GET", "POST"])
 def post():
-	if request.method == 'POST':
-		return render_template('post.html')
-	return render_template('get.html')
+    if request.method == "POST":
+        return render_template("post.html")
+    return render_template("get.html")
 
-if __name__ == '__main__':
-	port = int(os.environ.get('PORT', 8000))
-	app.run(host='0.0.0.0', port=port,debug=True)
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=port, debug=True)
