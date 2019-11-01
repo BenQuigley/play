@@ -3,26 +3,23 @@
     <title>Home</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <script src="static/js/main.js"></script>
   </head>
   <body>
+    <div class="hello card">
+      <h1>Welcome to the jungle!</h1>
+      <ul>
+        Hello world.
+      </ul>
+      <div class="input-area" id="input-local">
 
-  <div class="hello">
-    <h1>Welcome to the jungle!</h1>
-    <ul>
-      Hello world.
-    </ul>
-  </div>
-  <div class="input-area" id="input-local">
+        <div class="text-center">
+          Choose one or more CSV files to analyze.
+        </div>
 
-    <div class="text-center">
-      Choose one or more CSV files to analyze.
+        <input type="file" id="files" multiple>
+      </div>
     </div>
-
-    <input type="file" id="files" multiple>
-  </div>
-
   </body>
 </html>
