@@ -1,0 +1,10 @@
+{
+  "name": "y",
+  "version": "y",
+  "description": "A data visualization tool.",
+  "main": "index.js",
+  "repository": "https://github.com/BenQuigley/play.git",
+  "author": "Ben Quigley <ben.quigley@protonmail.com>",
+  "license": "MIT",
+  "private": false
+}
