@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Home</title>
@@ -5,6 +6,13 @@
     <meta content="utf-8" http-equiv="encoding">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <script src="static/js/main.js"></script>
+    <script>
+      var i = 0;
+      var hello = function() {
+        i++;
+        console.log("Hello world. i="+i);
+      }
+    </script>
   </head>
   <body>
     <div class="hello card">
@@ -17,8 +25,12 @@
         <div class="text-center">
           Choose one or more CSV files to analyze.
         </div>
-
-        <input type="file" id="files" multiple>
+        <div class="file-input">
+          <input type="file" id="files" multiple>
+        </div>
+        <div class="button-box">
+          <button onclick="hello()">Parse</button>
+        </div>
       </div>
     </div>
   </body>
