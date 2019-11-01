@@ -6,5 +6,9 @@
   "repository": "https://github.com/BenQuigley/play.git",
   "author": "Ben Quigley <ben.quigley@protonmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "arithmetic": "^1.0.1",
+    "papaparse": "^5.1.0"
+  }
 }
