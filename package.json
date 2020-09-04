@@ -10,6 +10,6 @@
   "dependencies": {
     "arithmetic": "^1.0.1",
     "bootstrap": "^4.3.1",
-    "papaparse": "^5.1.0"
+    "papaparse": "^5.2.0"
   }
 }
